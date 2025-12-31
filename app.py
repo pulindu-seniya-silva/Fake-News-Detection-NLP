@@ -52,5 +52,3 @@ if st.button("Analyze News"):
         else:
             st.success("✅ RELIABLE: This news article appears to be REAL.")
 
-# Footer
-st.info("Note: This model is a baseline tool and should be used for educational purposes.")
