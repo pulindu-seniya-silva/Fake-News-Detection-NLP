@@ -16,3 +16,10 @@ def load_assets():
 
 model, vectorizer = load_assets()
 
+# 3. The Cleaning Function (Must match your training logic)
+def clean_text(text):
+    text = text.lower()
+    text = re.sub(r'[^a-zA-Z\s]', ' ', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
